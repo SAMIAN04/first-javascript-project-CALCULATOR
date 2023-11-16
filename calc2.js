@@ -49,7 +49,7 @@ function delet() {
 }
 
 function result() {
-   const replaceOperator = display.innerText.replace(/%/g, "/100").replace(/X/g, "*");
+   const replaceOperator = display.innerText.replace(/%/g, "/100").replace(/X/g, "*").replace(/÷/g, "/");
 
    try {
        const result = eval(replaceOperator);
